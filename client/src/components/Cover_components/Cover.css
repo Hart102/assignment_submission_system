@@ -1,0 +1,133 @@
+:root{
+    --White: #fff;
+    --Black: #000;
+    --Light-white: #e0e0e0;
+    --Light-blue: #00ade4;
+}
+
+.cover{
+    overflow-y: hidden !important;
+    height: 100vh;
+}
+
+
+.index{
+    width: 100%;
+    min-height: 100vh;
+    /* background: rgba(0, 0, 0, 0.8) !important; */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), 
+    rgba(0, 0, 0, 0.5)), url('../../asserts/Images/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* rgba(1, 189, 202, 0.9), rgba(1, 189, 202, 0.9) */
+.index .row {
+    min-height: 100vh;
+    position: relative;
+    border-radius: 10px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.index .row form input{
+    color: var(--Light-white);
+    border: 0 !important;
+    background: transparent !important;
+    border-bottom: 1px solid var(--Light-white) !important;
+}
+
+.index .row .form-container{
+    /* min-height: 100vh; */
+}
+
+.index .form-group{
+    background: rgba(226, 209, 215, 0.2);
+    border-radius: 10px;
+}
+
+.index .row form input::placeholder{
+    opacity: 1 !important;
+    color: var(--Light-white);
+}
+
+.index .row form button{
+    width: 100%;
+    background: var(--Light-blue);
+}
+
+.index .img-container{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: red;
+}
+
+/* .index .img-container .text{
+    width: 400px;
+    max-width: 90%;
+} */
+
+
+@media (max-width: 490px) {
+    .index .row{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+
+    .index .text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pointer{
+    cursor: pointer;
+}
+ 
+
+.scale_out{
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.scale_in{
+    opacity: 1;
+    z-index: 1;
+    transition: 0.5s;
+    padding: 3em 1.8em !important;
+}

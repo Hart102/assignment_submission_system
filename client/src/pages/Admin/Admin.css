@@ -1,0 +1,142 @@
+:root{
+    --Red: #da4d44;
+    --Green: #4ab969;
+    --White: #fff;
+    --Ash: #caced2;
+    --Body-bg: #f4f8f9;
+}
+
+*{
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; */
+    font-family: -apple-system, system-ui, 
+    BlinkMacSystemFont, "Segoe UI", "Open Sans", 
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: hsl(180, 52%, 96%);
+}
+
+.h5{
+    color: var(--Ash);
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.admin nav {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+
+.admin .header_container .h4{
+    /* background:  #15242b !important; */
+    color: #38488f;
+}
+
+.admin .header_container > menu{
+    /* background:  #edeef2 !important; */
+    background:  #f1f5f8 !important;
+}
+
+.admin .header_container > menu a{
+    border-radius: 5px;
+}
+
+.admin .header_container > menu a:focus{
+    background: hsl(180, 52%, 96%) !important;
+    box-shadow: 0 0 2px 3px #e0e0e0;
+}
+
+
+
+.question, .student_display_container,
+.theory, .read-questions{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+}
+
+
+/* ----------- MAIN CONTAINER ----------- */
+.main-container{
+    width: 100%;
+    padding: 7em 0 !important;
+}
+
+.main-container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 20px;
+}
+
+
+
+/* ------------- SET QUESTION ------------- */
+.set_question .line {
+    background: #e6e6e6;
+}
+
+.set_question .options input::placeholder {
+    color: #999 !important;
+}
+
+textarea {
+    width: 100%;
+    height: 35vh;
+}
+
+
+/* ----------- Overview component styling ----------- */
+.box-container .box:nth-child(odd){
+    background: var(--White);
+}
+
+
+
+/* ------------ Reused component Styling  Start ------------ */
+
+.student_display_container .display_box:nth-child(odd) .left_line, 
+display_box:nth-child(odd) .left_line{
+    background: var(--Green) !important;
+}
+
+.student_display_container .display_box:nth-child(even) .left_line,
+display_box:nth-child(even) .left_line{
+    background: var(--Red) !important;
+}
+
+.action:hover{
+    color: #1df059;
+    text-decoration: underline !important;
+}
+
+#warningBtn:active {
+    background: #222;
+    color: var(--White);
+}
+/* --------------- Reused component Styling  End--------------- */
+
+
+
+
+/* --------------- Student Display Box component Styling --------------- */
+.display_box .title{
+    color: var(--Green) !important;
+}
+
+
+
+/* ----------------- Read student assesment file page -------------------- */
+.Read-student-assesment-file .container .student-info{
+    margin-top: 9em !important;
+}
+
+
+
+
+/* Important color : rgba(206, 33, 96, 0.966) */
